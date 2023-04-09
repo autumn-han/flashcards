@@ -43,7 +43,7 @@ def flash_cards(dictionary):
     print(x)        
     print("What is", my_list[x], "?")
     answer = input()
-    if answer == answer_list(x):
+    if answer == answer_list[x]:
         print("Correct")
     else:
         print("Wrong")

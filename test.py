@@ -15,11 +15,10 @@ def flash_cards(dictionary):
         answer_list.append(key)
         for key in dictionary[key]:
             my_list.append([key])
-    x = random.randint(0, len(my_list) - 1)
-    print(x)        
+    x = random.randint(0, len(my_list) - 1)      
     print("What is", my_list[x], "?")
     answer = input()
-    if answer == answer_list(x):
+    if answer == answer_list[x]:
         print("Correct")
     else:
         print("Wrong")
